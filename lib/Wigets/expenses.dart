@@ -12,21 +12,7 @@ class Expenses extends StatefulWidget {
 }
 
 class _ExpensesState extends State<Expenses> {
-  final List<Expense> _registorExpense = [
-    Expense(
-      title: "Pizza",
-      amount: 250,
-      date: DateTime.now(),
-      category: Category.food,
-    ),
-  ];
-  // late totalExpenseAmount _totalExpense;
-  // @override
-  // void initState() {
-  //   _totalExpense = totalExpenseAmount(expenses: _registorExpense);
-
-  //   super.initState();
-  // }
+  final List<Expense> _registorExpense = [];
 
   void _openAddExpenseOverlay() {
     showModalBottomSheet(
